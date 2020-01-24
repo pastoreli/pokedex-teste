@@ -1,0 +1,45 @@
+//page variables
+$header-slot-heihgt: 70px;
+
+//brand variables
+$primary-brand-color: #D04541;
+$primary-brand-color-light: lighten($primary-brand-color, 10%);
+$primary-brand-color-dark: darken($primary-brand-color, 10%);
+$secundary-brand-color: #66C7F7;
+$secundary-brand-color-light: lighten($secundary-brand-color, 10%);
+$secundary-brand-color-dark: darken($secundary-brand-color, 10%);
+$third-brand-color: #1A1A1A;
+$third-brand-color-light: #303030;
+$third-brand-color-light-2: #212121;
+$third-brand-color-light-3: #616161;
+$third-brand-color-dark: #1A1A1A;
+
+$success: #77D95A;
+$alert: #FEC91A;
+$danger: #F8604A;
+
+//pokemon type colors
+$type-grass-color: #9BCC50;
+$type-poison-color: #B97FC9;
+$type-fire-color: #FD7D24;
+$type-flying-color-1: #3DC7EF;
+$type-flying-color-2: #BDB9B8;
+$type-water-color: #4592C4;
+$type-bug-color: #729F3F;
+$type-normal-color: #A4ACAF;
+$type-electric-color: #EED535;
+$type-ground-color-1: #F7DE3F;
+$type-ground-color-2: #AB9842;
+$type-fairy-color: #FDB9E9;
+$type-ghost-color: #7B62A3;
+$type-psychic-color: #F366B9;
+$type-rock-color: #A38C21;
+$type-dark-color: #707070;
+$type-dragon-color-1: #53A4CF;
+$type-dragon-color-2: #F16E57;
+$type-ice-color: #51C4E7;
+$type-steel-color: #9EB7B8;
+$type-fighting-color: #D56723;
+
+$rounded: 10px;
+$border-color: #EBEBEB;

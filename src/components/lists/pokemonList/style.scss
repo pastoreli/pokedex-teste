@@ -1,0 +1,21 @@
+.pokedex-app {
+
+  .pok- {
+    &list {
+
+      &-item {
+        width: 100%;
+        height: 70px;
+        display: flex;
+
+        &image {
+          flex-basis: 60px;
+        }
+
+        &text {
+          flex-basis: calc(100% - 60px);
+        }
+      }
+    }
+  }
+}

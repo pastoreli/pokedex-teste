@@ -1,0 +1,159 @@
+.rounded {
+  border-radius: $rounded;
+}
+
+.fill- {
+  &height {
+    height: 100%;
+  }
+
+  &width {
+    width: 100%;
+  }
+
+  &all {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+$positionStyles: absolute,
+fixed,
+sticky,
+relative;
+
+@each $style in $positionStyles {
+  .position-#{$style} {
+    position: $style;
+  }
+}
+
+$borderDirections: top,
+right,
+bottom,
+left,
+all;
+$width: 1px;
+$style: solid;
+
+@each $direction in $borderDirections {
+  .border-#{$direction} {
+    @if $direction==all {
+      border: $width $style $border-color !important;
+    }
+
+    @else {
+      border-#{$direction}: $width $style $border-color !important;
+    }
+
+    box-sizing: border-box !important;
+  }
+
+  .border-none-#{$direction} {
+    @if $direction==all {
+      border: none !important;
+    }
+
+    @else {
+      border-#{$direction}: none !important;
+    }
+  }
+}
+
+//paddings and margins
+$pm-sizes: '0'0px,
+'2'2px,
+'4'4px,
+'6'6px,
+'8'8px,
+'10'10px,
+'12'12px,
+'14'14px,
+'16'16px,
+'18'18px,
+'20'20px,
+'auto'auto;
+
+@each $name,
+$size in $pm-sizes {
+  .pt-#{$name} {
+    padding-top: $size;
+  }
+
+  .mt-#{name} {
+    margin-top: $size;
+  }
+
+  .pb-#{$name} {
+    padding-bottom: $size;
+  }
+
+  .mb-#{name} {
+    margin-bottom: $size;
+  }
+
+  .pl-#{$name} {
+    padding-left: $size;
+  }
+
+  .ml-#{name} {
+    margin-left: $size;
+  }
+
+  .pr-#{$name} {
+    padding-right: $size;
+  }
+
+  .mr-#{name} {
+    margin-right: $size;
+  }
+
+  .px-#{$name} {
+    padding-right: $size;
+    padding-left: $size;
+  }
+
+  .mx-#{name} {
+    margin-right: $size;
+    margin-left: $size;
+  }
+
+  .py-#{$name} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+
+  .my-#{name} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+
+  .pa-#{$name} {
+    padding: $size;
+  }
+
+  .ma-#{name} {
+    margin: $size;
+  }
+}
+
+$display: block,
+inline,
+inline-block,
+none,
+flex;
+
+@each $type in $display {
+  .d-#{$type} {
+    display: $type;
+  }
+}
+
+$overflow: auto,
+hidden;
+
+@each $type in $overflow {
+  .overflow-#{$type} {
+    overflow: $type;
+  }
+}

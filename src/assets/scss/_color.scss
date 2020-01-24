@@ -1,0 +1,142 @@
+.pokedex-app {
+
+  .primary {
+    background-color: $primary-brand-color !important;
+
+    &__light {
+      background-color: $primary-brand-color-light !important;
+    }
+
+    &__dark {
+      background-color: $primary-brand-color-dark !important;
+    }
+  }
+
+  .secundary {
+    background-color: $secundary-brand-color !important;
+
+    &__light {
+      background-color: $secundary-brand-color-light !important;
+    }
+
+    &__dark {
+      background-color: $secundary-brand-color-dark !important;
+    }
+  }
+
+  .third {
+    background-color: $third-brand-color !important;
+
+    &__light {
+      background-color: $third-brand-color-light !important;
+
+      &-2 {
+        background-color: $third-brand-color-light-2 !important;
+      }
+    }
+
+    &__dark {
+      background-color: $third-brand-color-dark !important;
+    }
+  }
+
+  .success {
+    background-color: $success !important;
+  }
+
+  .alert {
+    background-color: $alert !important;
+  }
+
+  .danger {
+    background-color: $danger !important;
+  }
+
+  .Grass {
+    background-color: $type-grass-color;
+  }
+
+  .Poison {
+    background-color: $type-poison-color;
+  }
+
+  .Fire {
+    background-color: $type-fire-color;
+  }
+
+  .Flying {
+    background-image: linear-gradient($type-flying-color-1 50%, $type-flying-color-2 50%);
+  }
+
+  .Water {
+    background-color: $type-water-color;
+  }
+
+  .Bug {
+    background-color: $type-bug-color;
+  }
+
+  .Normal {
+    background-color: $type-normal-color;
+  }
+
+  .Electric {
+    background-color: $type-electric-color;
+  }
+
+  .Ground {
+    background-image: linear-gradient($type-ground-color-1 50%, $type-ground-color-2 50%);
+  }
+
+  .Fairy {
+    background-color: $type-fairy-color;
+  }
+
+  .Ghost {
+    background-color: $type-ghost-color;
+  }
+
+  .Psychic {
+    background-color: $type-psychic-color;
+  }
+
+  .Rock {
+    background-color: $type-rock-color;
+  }
+
+  .Dark {
+    background-color: $type-dark-color;
+  }
+
+  .Dragon {
+    background-image: linear-gradient($type-dragon-color-1 50%, $type-dragon-color-2 50%);
+  }
+
+  .Ice {
+    background-color: $type-ice-color;
+  }
+
+  .Steel {
+    background-color: $type-steel-color;
+  }
+
+  .Fighting {
+    background-color: $type-fighting-color;
+  }
+}
+
+$defaulr-colors:'white'white,
+'grey'#868686,
+'grey-darken'#171717,
+'grey-lighten'#E2E2E2;
+
+@each $name,
+$color in $defaulr-colors {
+  .#{$name} {
+    background-color: $color;
+
+    &--text {
+      color: $color
+    }
+  }
+}

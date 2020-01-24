@@ -1,0 +1,13 @@
+#pokedex {
+  $list-size: 350px;
+
+  .content {
+    &-left {
+      flex-basis: $list-size;
+    }
+
+    &-rifght {
+      flex-basis: calc(100% - #{$list-size});
+    }
+  }
+}
