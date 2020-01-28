@@ -1,0 +1,18 @@
+.pokedex-app {
+  @import '@/assets/scss/main.scss';
+
+  .pok-details {
+    &-element-layer {
+      width: 100%;
+      height: 200px;
+    }
+
+    img {
+      margin-top: -110px;
+    }
+
+    &-content {
+      margin-top: -70px;
+    }
+  }
+}

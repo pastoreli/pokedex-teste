@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.pokedex-app {
+  h1 {
+    font-size: $h1;
+    line-height: $h1-line;
+    font-weight: $text-normal;
+  }
+
+  h2 {
+    font-size: $h2;
+    line-height: $h2-line;
+    font-weight: $text-normal;
+  }
+
+  h3 {
+    font-size: $h3;
+    line-height: $h3-line;
+    font-weight: $text-normal;
+  }
+
+  h4 {
+    font-size: $h4;
+    line-height: $h4-line;
+    font-weight: $text-normal;
+  }
+
+  h5 {
+    font-size: $h5;
+    line-height: $h5-line;
+    font-weight: $text-normal;
+  }
+
+  h6 {
+    font-size: $h6;
+    line-height: $h6-line;
+    font-weight: $text-normal;
+  }
+
+  .text-- {
+    &h1 {
+      font-size: $h1 !important;
+      line-height: $h1-line !important;
+    }
+
+    &h2 {
+      font-size: $h2 !important;
+      line-height: $h2-line !important;
+    }
+
+    &h3 {
+      font-size: $h3 !important;
+      line-height: $h3-line !important;
+    }
+
+    &h4 {
+      font-size: $h4 !important;
+      line-height: $h4-line !important;
+    }
+
+    &h5 {
+      font-size: $h5 !important;
+      line-height: $h5-line !important;
+    }
+
+    &h6 {
+      font-size: $h6 !important;
+      line-height: $h6-line !important;
+    }
+
+    &light {
+      font-weight: $text-light;
+    }
+
+    &normal {
+      font-weight: $text-normal;
+    }
+
+    &bold {
+      font-weight: bolder !important;
+    }
+  }
+}

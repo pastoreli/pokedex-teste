@@ -1,5 +1,5 @@
-import pokemonList from './pokemonList'
+import PokemonList from './PokemonList'
 
 export {
-  pokemonList
+  PokemonList
 }

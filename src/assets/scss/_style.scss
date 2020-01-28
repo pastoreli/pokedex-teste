@@ -20,4 +20,32 @@ body {
     box-sizing: border-box;
   }
 
+  .round-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+
+    &.big-icon {
+      width: 60px;
+      height: 60px;
+      background: #CDE0E6;
+
+      &::after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: $secundary-brand-color;
+        margin: auto;
+        transform: translateY(-50%);
+        top: 50%;
+        box-shadow: 0 14px 28px $shadow-color, 0 10px 10px $shadow-color;
+      }
+    }
+  }
+
 }

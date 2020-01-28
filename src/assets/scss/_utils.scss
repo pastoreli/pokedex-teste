@@ -80,7 +80,7 @@ $size in $pm-sizes {
     padding-top: $size;
   }
 
-  .mt-#{name} {
+  .mt-#{$name} {
     margin-top: $size;
   }
 
@@ -88,7 +88,7 @@ $size in $pm-sizes {
     padding-bottom: $size;
   }
 
-  .mb-#{name} {
+  .mb-#{$name} {
     margin-bottom: $size;
   }
 
@@ -96,7 +96,7 @@ $size in $pm-sizes {
     padding-left: $size;
   }
 
-  .ml-#{name} {
+  .ml-#{$name} {
     margin-left: $size;
   }
 
@@ -104,7 +104,7 @@ $size in $pm-sizes {
     padding-right: $size;
   }
 
-  .mr-#{name} {
+  .mr-#{$name} {
     margin-right: $size;
   }
 
@@ -113,7 +113,7 @@ $size in $pm-sizes {
     padding-left: $size;
   }
 
-  .mx-#{name} {
+  .mx-#{$name} {
     margin-right: $size;
     margin-left: $size;
   }
@@ -123,7 +123,7 @@ $size in $pm-sizes {
     padding-bottom: $size;
   }
 
-  .my-#{name} {
+  .my-#{$name} {
     margin-top: $size;
     margin-bottom: $size;
   }
@@ -132,7 +132,7 @@ $size in $pm-sizes {
     padding: $size;
   }
 
-  .ma-#{name} {
+  .ma-#{$name} {
     margin: $size;
   }
 }
@@ -155,5 +155,23 @@ hidden;
 @each $type in $overflow {
   .overflow-#{$type} {
     overflow: $type;
+  }
+}
+
+$cursor: pointer;
+
+@each $type in $cursor {
+  .cursor-#{$type} {
+    cursor: $type;
+  }
+}
+
+$text: center,
+left,
+right;
+
+@each $type in $text {
+  .text-#{$type} {
+    text-align: $type;
   }
 }

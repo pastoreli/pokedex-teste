@@ -6,7 +6,7 @@
       flex-basis: $list-size;
     }
 
-    &-rifght {
+    &-right {
       flex-basis: calc(100% - #{$list-size});
     }
   }

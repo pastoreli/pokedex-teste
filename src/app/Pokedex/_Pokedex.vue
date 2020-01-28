@@ -1,8 +1,11 @@
 <template>
   <div id="pokedex" class="d-flex fill-all pa-20">
     <div class="grey-lighten fill-all rounded d-flex pa-20">
-      <div class="content-left grey-darken fill-height overflow-auto">
-        <pokemonList :items="storePokemonList" />
+      <div class="content-left grey-darken fill-height overflow-auto border-right">
+        <pokemon-list :items="storePokemonList" @choose="findPokemonByName" />
+      </div>
+      <div class="content-right grey-darken fill-height overflow-auto">
+        <pokemon-details :pokemon="storePokemon" />
       </div>
     </div>
   </div>
@@ -16,16 +19,20 @@ import {
 } from 'vuex'
 
 import {
-  pokemonList
+  PokemonList
 } from '@/components/lists'
+
+import PokemonDetails from '@/components/PokemonDetails'
 
 export default {
   components: {
-    pokemonList
+    PokemonList,
+    PokemonDetails
   },
   computed: {
     ...mapGetters([
-      'storePokemonList'
+      'storePokemonList',
+      'storePokemon'
     ])
   },
   mounted () {
@@ -34,7 +41,9 @@ export default {
   methods: {
     ...mapActions([
       'getAllPokemons',
-      'setPokemonList'
+      'getPokemon',
+      'setPokemonList',
+      'setPokemon'
     ]),
     loadPage () {
       this.handlerPokemon()
@@ -42,6 +51,10 @@ export default {
     async handlerPokemon () {
       const pokemonList = await this.getAllPokemons()
       this.setPokemonList(pokemonList)
+    },
+    async findPokemonByName (name) {
+      const pokemon = await this.getPokemon(name)
+      this.setPokemon(pokemon)
     }
   }
 }
